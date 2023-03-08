@@ -1,9 +1,10 @@
-#everything {
+*:not(title) {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 #container {
   display: flex;
@@ -21,7 +22,7 @@ button {
   height: 25px;
   width: 25px;
   box-sizing: border-box;
-  transition: background-color 1s;
+  transition: background-color .5s;
 }
 
 .toggle-on {
@@ -29,5 +30,12 @@ button {
   height: 25px;
   width: 25px;
   box-sizing: border-box;
-  transition: background-color 1s;
+  transition: background-color .25s;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
 }
